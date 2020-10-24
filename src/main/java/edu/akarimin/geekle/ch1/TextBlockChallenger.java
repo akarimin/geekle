@@ -7,10 +7,11 @@ public class TextBlockChallenger {
                 "<html>\n" +
                 "    <head>Master Yoda</head> %s\n" +
                 "</html>"
-                        .strip()
+                        .strip()            // only line 9 is stripped, instead of whole String - no good
                         .formatted("Luke");
 
-        String jediWithTextBlock = """
+        // preferred
+        String jediWithTextBlock = """              
                 <html>
                     <head>Master Yoda</head> %s
                 </html>
